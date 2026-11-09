@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divesh &amp; Achal — Wedding Invitation</title>
+<meta name="description" content="Monday, 28 December 2026 · 10:30 AM · Shravan Lawn, Sindewahi, Chandrapur">
+<meta property="og:title" content="Divesh &amp; Achal — Wedding Invitation">
+<meta property="og:description" content="Monday, 28 December 2026 · 10:30 AM · Shravan Lawn, Sindewahi, Chandrapur">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#5B0E1C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Jost:wght@300;400;500&family=Allura&display=swap">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#2A060D}
+body{font-family:'Jost',system-ui,sans-serif;color:#3D0912;display:flex;justify-content:center}
+#app{position:relative;width:100%;max-width:430px;height:100vh;height:100dvh;overflow:hidden;background:#FBF3E6}
+.scroll{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.scroll::-webkit-scrollbar{width:0}
+button{font-family:inherit}
+a{-webkit-tap-highlight-color:transparent}
+.bric{font-family:'Bricolage Grotesque',sans-serif}
+.bodoni{font-family:'Bodoni Moda',serif}
+.script{font-family:'Allura',cursive}
+.label{font-size:12px;letter-spacing:5px;color:#8A2232;margin:0}
+.center{display:flex;flex-direction:column;align-items:center;text-align:center}
+
+@keyframes iv-rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes iv-sway{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+@keyframes iv-fallL{0%{transform:translate(0,-40px) rotate(0deg);opacity:0}8%{opacity:1}100%{transform:translate(-60px,110vh) rotate(-520deg);opacity:.9}}
+@keyframes iv-fallR{0%{transform:translate(0,-40px) rotate(0deg);opacity:0}8%{opacity:1}100%{transform:translate(60px,110vh) rotate(520deg);opacity:.9}}
+@keyframes iv-up{0%{transform:translateY(0) scale(.5);opacity:0}15%{opacity:1}100%{transform:translateY(-60vh) scale(1.25);opacity:0}}
+@keyframes iv-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@keyframes iv-twinkle{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes iv-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.iv-rise{animation:iv-rise 1s ease both}
+.iv-sway{transform-box:fill-box;transform-origin:50% 0;animation:iv-sway 2.6s ease-in-out infinite alternate}
+.iv-s2{animation-duration:3.1s;animation-delay:-.8s}.iv-s3{animation-duration:2.2s;animation-delay:-1.4s}
+.iv-pulse{animation:iv-pulse 2.2s ease-in-out infinite}
+.iv-tw{animation:iv-twinkle 1.8s ease-in-out infinite}.iv-tw2{animation-delay:-.6s}.iv-tw3{animation-delay:-1.2s}
+.iv-float{animation:iv-float 3.5s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.iv-rise,.iv-sway,.iv-pulse,.iv-tw,.iv-float{animation:none}}
+
+/* doors */
+.doors{position:absolute;inset:0;z-index:40}
+.door{position:absolute;top:0;height:100%;width:50.2%;background:#5B0E1C;transition:transform 1.5s cubic-bezier(.65,0,.35,1)}
+.door-l{left:0;border-right:1px solid #C9A24A}
+.door-r{right:0;border-left:1px solid #C9A24A}
+.door .p1{position:absolute;top:14%;bottom:5%;border:1.5px solid #C9A24A;border-radius:80px 80px 8px 8px}
+.door .p2{position:absolute;top:15.8%;bottom:6.6%;border:1px solid rgba(201,162,74,.45);border-radius:70px 70px 4px 4px}
+.door-l .p1{left:11%;right:8%}.door-l .p2{left:17%;right:14%}
+.door-r .p1{left:8%;right:11%}.door-r .p2{left:14%;right:17%}
+.door .ring{position:absolute;top:56%;width:26px;height:26px;border-radius:50%;border:3px solid #C9A24A}
+.door-l .ring{right:14px}.door-r .ring{left:14px}
+.intro{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;transition:opacity .6s ease}
+.opened .door-l{transform:translateX(-102%)}
+.opened .door-r{transform:translateX(102%)}
+.opened .intro{opacity:0}
+.opened .doors{pointer-events:none}
+
+.seal-btn{width:214px;height:214px;border:0;padding:0;border-radius:50%;background:transparent;cursor:pointer;filter:drop-shadow(0 14px 22px rgba(0,0,0,.45))}
+
+/* date tiles */
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:100%}
+.tile{height:118px;padding:0;border:0;background:transparent;cursor:pointer;perspective:700px}
+.tile-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.tile.flipped .tile-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;border:1.5px solid #C9A24A;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.front{background:#5B0E1C;gap:6px}
+.back{background:#FFF8EC;transform:rotateY(180deg);gap:4px}
+.back b{font-family:'Bodoni Moda',serif;font-size:36px;font-weight:500;line-height:1;color:#5B0E1C}
+.back span{font-size:10px;letter-spacing:3px;color:#8A2232}
+.hidden{display:none !important}
+
+.unit{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 0;border-radius:14px;background:rgba(255,248,236,.06);border:1px solid rgba(201,162,74,.5)}
+.unit b{font-family:'Bodoni Moda',serif;font-size:28px;font-weight:500;line-height:1;color:#FBF3E6}
+.unit span{font-size:10px;letter-spacing:2px;color:#E8CF8E}
+
+.btn{min-height:52px;display:flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:3px}
+.btn-solid{background:#5B0E1C;color:#F1DDA6}
+.btn-line{border:1.5px solid #C9A24A;color:#5B0E1C}
+
+#fx{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:30}
+.petal{position:absolute;top:-30px;border-radius:60% 0 60% 0}
+.heart{position:absolute}
+</style>
+</head>
+<body>
+<div id="app">
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+<defs>
+<g id="mg"><circle r="7" fill="#E8862A"/><circle r="5" fill="#F2A03D"/><circle r="2.6" fill="#F7C548"/></g>
+<g id="mgy"><circle r="7" fill="#E9A72B"/><circle r="5" fill="#F7C548"/><circle r="2.6" fill="#FBE08A"/></g>
+<g id="leaf"><path d="M0 0c6 4 8 12 0 18c-8-6-6-14 0-18z" fill="#4F7A3A"/><path d="M0 2v14" stroke="#7FA65A" stroke-width=".8"/></g>
+<g id="bell"><path d="M-7 10q0-12 7-12t7 12l2 3h-18z" fill="#C9A24A"/><circle cy="15" r="2.4" fill="#A47E2E"/><rect x="-1" y="-6" width="2" height="5" fill="#C9A24A"/></g>
+</defs>
+</svg>
+
+<div class="scroll" id="scroll">
+
+<div style="position:relative;background:#5B0E1C">
+<svg width="100%" viewBox="0 0 390 120" aria-hidden="true" style="display:block">
+<path d="M0 14Q195 40 390 14" fill="none" stroke="#C9A24A" stroke-width="1.5"/>
+<g class="iv-sway"><path d="M28 20v58" stroke="#C9A24A"/><use href="#mg" x="28" y="30"/><use href="#mgy" x="28" y="44"/><use href="#mg" x="28" y="58"/><use href="#bell" x="28" y="76"/></g>
+<g class="iv-sway iv-s2"><path d="M84 25v40" stroke="#C9A24A"/><use href="#mgy" x="84" y="35"/><use href="#mg" x="84" y="49"/><use href="#bell" x="84" y="63"/></g>
+<g class="iv-sway iv-s3"><path d="M140 28v58" stroke="#C9A24A"/><use href="#mg" x="140" y="38"/><use href="#mgy" x="140" y="52"/><use href="#mg" x="140" y="66"/><use href="#bell" x="140" y="84"/></g>
+<g class="iv-sway"><path d="M195 29v40" stroke="#C9A24A"/><use href="#mgy" x="195" y="39"/><use href="#mg" x="195" y="53"/><use href="#bell" x="195" y="67"/></g>
+<g class="iv-sway iv-s2"><path d="M250 28v58" stroke="#C9A24A"/><use href="#mg" x="250" y="38"/><use href="#mgy" x="250" y="52"/><use href="#mg" x="250" y="66"/><use href="#bell" x="250" y="84"/></g>
+<g class="iv-sway iv-s3"><path d="M306 25v40" stroke="#C9A24A"/><use href="#mgy" x="306" y="35"/><use href="#mg" x="306" y="49"/><use href="#bell" x="306" y="63"/></g>
+<g class="iv-sway"><path d="M362 20v58" stroke="#C9A24A"/><use href="#mg" x="362" y="30"/><use href="#mgy" x="362" y="44"/><use href="#mg" x="362" y="58"/><use href="#bell" x="362" y="76"/></g>
+<use href="#leaf" x="12" y="14"/><use href="#mg" x="0" y="15"/><use href="#leaf" x="56" y="20"/><use href="#mgy" x="44" y="20"/><use href="#mg" x="112" y="26"/><use href="#leaf" x="124" y="25"/><use href="#mgy" x="168" y="28"/><use href="#leaf" x="180" y="27"/><use href="#mg" x="222" y="28"/><use href="#leaf" x="236" y="26"/><use href="#mgy" x="278" y="26"/><use href="#leaf" x="292" y="23"/><use href="#mg" x="334" y="21"/><use href="#leaf" x="348" y="19"/><use href="#mgy" x="390" y="15"/>
+</svg>
+</div>
+
+<div style="background:linear-gradient(#5B0E1C,#5B0E1C 40px,#FBF3E6 40px);padding:0 24px">
+<div style="position:relative;margin:0 auto;width:300px;max-width:100%;height:360px;border-radius:150px 150px 18px 18px;background:radial-gradient(90% 70% at 50% 35%,#FFF8EC 0%,#F6E3C4 100%);border:2px solid #C9A24A;box-shadow:0 0 0 6px #FBF3E6,0 0 0 7px #C9A24A;overflow:hidden">
+<svg width="300" height="360" viewBox="0 0 300 360" aria-hidden="true" style="position:absolute;left:50%;top:0;transform:translateX(-50%)">
+<g fill="none" stroke="#C9A24A" stroke-opacity=".35" stroke-width="1">
+<circle cx="150" cy="140" r="110"/><circle cx="150" cy="140" r="90" stroke-dasharray="3 6"/>
+<path d="M150 30c16 26 16 50 0 70c-16-20-16-44 0-70zM150 250c16-26 16-50 0-70c-16 20-16 44 0 70zM40 140c26-16 50-16 70 0c-20 16-44 16-70 0zM260 140c-26-16-50-16-70 0c20 16 44 16 70 0z"/>
+</g>
+<g class="iv-tw"><circle cx="40" cy="70" r="2" fill="#C9A24A"/></g>
+<g class="iv-tw iv-tw2"><circle cx="262" cy="84" r="2.4" fill="#C9A24A"/></g>
+<g class="iv-tw iv-tw3"><circle cx="70" cy="36" r="1.6" fill="#C9A24A"/></g>
+<g class="iv-tw iv-tw2"><circle cx="232" cy="42" r="1.8" fill="#C9A24A"/></g>
+</svg>
+<button type="button" id="couple" aria-label="Tap the couple to send love" style="position:absolute;left:0;right:0;bottom:0;height:300px;border:0;padding:0;background:transparent;cursor:pointer">
+<svg class="iv-float" width="300" height="300" viewBox="0 0 300 300" aria-hidden="true" style="display:block;margin:0 auto">
+<ellipse cx="150" cy="292" rx="110" ry="8" fill="#E7CFA6"/>
+<path d="M88 236h18v52H88zM112 236h18v52h-18z" fill="#EADBC0"/>
+<path d="M84 286h24v6H84zM110 286h24v6h-24z" fill="#5B0E1C"/>
+<path d="M76 130Q109 118 142 130L148 246Q109 254 70 246Z" fill="#F7EBD3" stroke="#C9A24A" stroke-width="1.5"/>
+<path d="M70 246Q109 254 148 246" fill="none" stroke="#C9A24A" stroke-width="3"/>
+<circle cx="109" cy="146" r="2" fill="#C9A24A"/><circle cx="109" cy="162" r="2" fill="#C9A24A"/><circle cx="109" cy="178" r="2" fill="#C9A24A"/><circle cx="109" cy="194" r="2" fill="#C9A24A"/><circle cx="109" cy="210" r="2" fill="#C9A24A"/>
+<path d="M82 132Q104 170 96 248L84 248Q92 176 76 136Z" fill="#8A1E2D"/>
+<path d="M140 134Q156 160 172 184" stroke="#F7EBD3" stroke-width="13" stroke-linecap="round" fill="none"/>
+<circle cx="174" cy="187" r="6.5" fill="#D49A6A"/>
+<path d="M101 112h16v18h-16z" fill="#D49A6A"/>
+<circle cx="109" cy="98" r="20" fill="#D49A6A"/>
+<path d="M89 98Q87 70 109 68Q131 70 129 98Q118 88 109 88Q100 88 89 98Z" fill="#8A1E2D"/>
+<path d="M90 92Q109 80 128 92" fill="none" stroke="#C9A24A" stroke-width="2.5"/>
+<path d="M120 72q8-14 4-24q-6 10-8 22z" fill="#C9A24A"/><circle cx="118" cy="76" r="3" fill="#F7EBD3"/>
+<path d="M174 176L236 176L262 288Q205 298 148 288Z" fill="#A3172C"/>
+<path d="M150 280Q205 292 260 280" fill="none" stroke="#C9A24A" stroke-width="5"/>
+<path d="M156 258Q205 268 254 258" fill="none" stroke="#C9A24A" stroke-width="1.5" stroke-dasharray="2 5"/>
+<path d="M186 128Q205 120 224 128L228 180L182 180Z" fill="#B8233A"/>
+<path d="M192 132Q205 148 218 132" fill="none" stroke="#C9A24A" stroke-width="2.5"/>
+<path d="M196 114h18v16h-18z" fill="#D9A574"/>
+<circle cx="205" cy="98" r="19" fill="#D9A574"/>
+<path d="M186 96Q186 74 205 74Q224 74 224 96Q214 84 205 84Q196 84 186 96Z" fill="#2E1A14"/>
+<circle cx="205" cy="84" r="2.6" fill="#C9A24A"/><path d="M205 76v8" stroke="#C9A24A" stroke-width="1.2"/>
+<path d="M182 100Q180 68 205 64Q232 66 230 104L252 286Q240 292 232 280L226 140Q222 120 214 110" fill="#C2364A" fill-opacity=".72" stroke="#C9A24A" stroke-width="1.5"/>
+<path d="M188 134Q176 160 178 184" stroke="#B8233A" stroke-width="12" stroke-linecap="round" fill="none"/>
+<circle cx="178" cy="189" r="6" fill="#D9A574"/>
+<path class="iv-pulse" style="transform-box:fill-box;transform-origin:center" d="M176 168c-4-6-12-4-11 3c1 5 11 10 11 10s10-5 11-10c1-7-7-9-11-3z" fill="#C2364A"/>
+</svg>
+</button>
+</div>
+<p style="margin:14px 0 0;text-align:center;font-size:12px;letter-spacing:2px;color:#8A5A3C">TAP THE COUPLE TO SEND LOVE</p>
+</div>
+
+<div class="center iv-rise" style="padding:34px 24px 0;gap:10px">
+<p class="label">WITH THE BLESSINGS OF OUR FAMILIES</p>
+<p class="script" style="margin:6px 0 0;font-size:30px;color:#A47E2E">together with joy, we invite you to the wedding of</p>
+<p class="bric" style="margin:8px 0 0;font-weight:700;font-size:62px;letter-spacing:-2px;line-height:1;color:#5B0E1C">Divesh</p>
+<div style="display:flex;align-items:center;gap:14px">
+<span style="width:60px;height:1px;background:#C9A24A"></span>
+<span class="script" style="font-size:40px;line-height:1;color:#C9A24A">and</span>
+<span style="width:60px;height:1px;background:#C9A24A"></span>
+</div>
+<p class="bric" style="margin:0;font-weight:700;font-size:62px;letter-spacing:-2px;line-height:1;color:#5B0E1C">Achal</p>
+</div>
+
+<div class="center" style="padding:40px 24px 0;gap:16px">
+<p class="label">THE AUSPICIOUS DAY</p>
+<p id="tileHint" style="margin:0;font-size:14px;font-weight:300;color:#6B3A3A">Tap each card to reveal the date</p>
+<div class="tiles">
+<button type="button" class="tile" aria-label="Reveal the day"><div class="tile-in"><div class="face front"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 2c6 6 6 12 0 15c-6-3-6-9 0-15zM17 32c6-6 6-12 0-15c-6 3-6 9 0 15zM2 17c6-6 12-6 15 0c-3 6-9 6-15 0zM32 17c-6-6-12-6-15 0c3 6 9 6 15 0z" fill="none" stroke="#C9A24A" stroke-width="1.2"/><circle cx="17" cy="17" r="2.4" fill="#F7C548"/></svg><span style="font-size:10px;letter-spacing:3px;color:#E8CF8E">TAP</span></div><div class="face back"><b>28</b><span>MONDAY</span></div></div></button>
+<button type="button" class="tile" aria-label="Reveal the month"><div class="tile-in"><div class="face front"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 2c6 6 6 12 0 15c-6-3-6-9 0-15zM17 32c6-6 6-12 0-15c-6 3-6 9 0 15zM2 17c6-6 12-6 15 0c-3 6-9 6-15 0zM32 17c-6-6-12-6-15 0c3 6 9 6 15 0z" fill="none" stroke="#C9A24A" stroke-width="1.2"/><circle cx="17" cy="17" r="2.4" fill="#F7C548"/></svg><span style="font-size:10px;letter-spacing:3px;color:#E8CF8E">TAP</span></div><div class="face back"><b>Dec</b><span>DECEMBER</span></div></div></button>
+<button type="button" class="tile" aria-label="Reveal the year"><div class="tile-in"><div class="face front"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 2c6 6 6 12 0 15c-6-3-6-9 0-15zM17 32c6-6 6-12 0-15c-6 3-6 9 0 15zM2 17c6-6 12-6 15 0c-3 6-9 6-15 0zM32 17c-6-6-12-6-15 0c3 6 9 6 15 0z" fill="none" stroke="#C9A24A" stroke-width="1.2"/><circle cx="17" cy="17" r="2.4" fill="#F7C548"/></svg><span style="font-size:10px;letter-spacing:3px;color:#E8CF8E">TAP</span></div><div class="face back"><b>2026</b><span>THE YEAR</span></div></div></button>
+</div>
+<div style="margin-top:6px;width:100%;padding:18px 16px;border-radius:20px;background:#5B0E1C;border:1.5px solid #C9A24A;box-shadow:0 0 0 5px #FBF3E6,0 0 0 6px rgba(201,162,74,.6);display:flex;align-items:center;justify-content:center;gap:16px">
+<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="#C9A24A" stroke-width="1.6"/><circle cx="20" cy="20" r="13" fill="none" stroke="#C9A24A" stroke-opacity=".45"/><path d="M20 11v9l6 4" fill="none" stroke="#F1DDA6" stroke-width="2" stroke-linecap="round"/></svg>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:2px">
+<span style="font-size:10px;letter-spacing:4px;color:#E8CF8E">CEREMONY BEGINS AT</span>
+<span style="display:flex;align-items:baseline;gap:8px"><span class="bric" style="font-weight:700;font-size:44px;letter-spacing:-1.5px;line-height:1;color:#FBF3E6">10:30</span><span class="bodoni" style="font-style:italic;font-size:26px;line-height:1;color:#F1DDA6">AM</span></span>
+</div>
+</div>
+<div id="saved" class="iv-rise hidden"><p class="script" style="margin:0;font-size:26px;color:#A47E2E">save the date</p></div>
+</div>
+
+<div style="margin:34px 22px 0;padding:22px 14px;border-radius:22px;background:#5B0E1C;display:flex;flex-direction:column;align-items:center;gap:14px">
+<p id="cdLabel" class="script" style="margin:0;font-size:30px;line-height:1;color:#F1DDA6">counting down to forever</p>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%">
+<div class="unit"><b id="cdD">0</b><span>DAYS</span></div>
+<div class="unit"><b id="cdH">00</b><span>HOURS</span></div>
+<div class="unit"><b id="cdM">00</b><span>MINS</span></div>
+<div class="unit"><b id="cdS">00</b><span>SECS</span></div>
+</div>
+</div>
+
+<div class="center" style="padding:40px 24px 0;gap:8px">
+<svg width="100%" viewBox="0 0 342 110" aria-hidden="true" style="max-width:342px">
+<path d="M10 24Q90 54 171 24Q252 54 332 24" fill="none" stroke="#8A5A3C"/>
+<g class="iv-tw"><circle cx="30" cy="31" r="3.5" fill="#F7C548"/><circle cx="90" cy="38" r="3.5" fill="#F7C548"/><circle cx="150" cy="30" r="3.5" fill="#F7C548"/><circle cx="210" cy="34" r="3.5" fill="#F7C548"/><circle cx="270" cy="38" r="3.5" fill="#F7C548"/></g>
+<g class="iv-tw iv-tw2"><circle cx="60" cy="36" r="3.5" fill="#F2A03D"/><circle cx="120" cy="35" r="3.5" fill="#F2A03D"/><circle cx="180" cy="31" r="3.5" fill="#F2A03D"/><circle cx="240" cy="38" r="3.5" fill="#F2A03D"/><circle cx="300" cy="35" r="3.5" fill="#F2A03D"/></g>
+<path d="M20 108v-34M20 74c-14 0-18-22 0-30c18 8 14 30 0 30z" fill="#4F7A3A" stroke="#4F7A3A"/>
+<path d="M322 108v-34M322 74c-14 0-18-22 0-30c18 8 14 30 0 30z" fill="#4F7A3A" stroke="#4F7A3A"/>
+<path d="M110 108V72l61-22l61 22v36" fill="#FFF8EC" stroke="#C9A24A" stroke-width="1.5"/>
+<path d="M150 108V86q21-20 42 0v22" fill="#F6E3C4" stroke="#C9A24A" stroke-width="1.5"/>
+<path d="M0 108h342" stroke="#7FA65A" stroke-width="3"/>
+</svg>
+<p class="label">THE VENUE</p>
+<p class="bodoni" style="margin:0;font-size:32px;font-weight:500;color:#5B0E1C;line-height:1.15">Shravan Lawn</p>
+<p style="margin:0;font-size:17px;font-weight:300;color:#5E2A31">Sindewahi, Chandrapur</p>
+</div>
+
+<div style="padding:22px 28px 0;display:flex;flex-direction:column;gap:12px">
+<a class="btn btn-solid" href="https://www.google.com/maps/search/?api=1&query=Shravan+Lawn+Sindewahi+Chandrapur" target="_blank" rel="noopener">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-7.3 7-12a7 7 0 0 0-14 0c0 4.7 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>GET DIRECTIONS</a>
+<a class="btn btn-line" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Divesh+%26+Achal+Wedding&dates=20261228T050000Z/20261228T090000Z&location=Shravan+Lawn,+Sindewahi,+Chandrapur" target="_blank" rel="noopener">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>ADD TO CALENDAR</a>
+</div>
+
+<div class="center" style="margin-top:44px;padding:44px 28px 56px;background:#5B0E1C;color:#FBF3E6;gap:14px">
+<p class="bodoni" style="margin:0;font-style:italic;font-size:22px;line-height:1.45;color:#F6E3C4">Your presence and blessings<br>will make our day complete.</p>
+<button type="button" id="shower" class="iv-pulse" style="margin-top:8px;min-height:54px;padding:0 28px;display:flex;align-items:center;gap:10px;border-radius:999px;border:0;background:#C9A24A;color:#3D0912;font-size:13px;font-weight:500;letter-spacing:3px;cursor:pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 3 3 6 0 9c-3-3-3-6 0-9zM12 21c3-3 3-6 0-9c-3 3-3 6 0 9zM3 12c3-3 6-3 9 0c-3 3-6 3-9 0zM21 12c-3-3-6-3-9 0c3 3 6 3 9 0z"/></svg>SHOWER BLESSINGS</button>
+<p class="bric" style="margin:6px 0 0;font-weight:700;font-size:34px;letter-spacing:-1px;color:#F1DDA6">Divesh <span class="script" style="font-weight:400;font-size:28px;letter-spacing:0;margin:0 4px;color:#E8CF8E">&amp;</span> Achal</p>
+<button type="button" id="closeBtn" style="min-height:44px;padding:0 20px;border-radius:999px;border:1px solid rgba(232,207,142,.6);background:transparent;color:#E8CF8E;font-size:11px;letter-spacing:3px;cursor:pointer">CLOSE THE DOORS</button>
+</div>
+
+</div>
+
+<div id="fx" aria-hidden="true"></div>
+
+<div class="doors">
+<div class="door door-l"><div class="p1"></div><div class="p2"></div><div class="ring"></div></div>
+<div class="door door-r"><div class="p1"></div><div class="p2"></div><div class="ring"></div></div>
+<div class="intro">
+<svg width="100%" viewBox="0 0 390 110" aria-hidden="true" style="display:block">
+<path d="M0 12Q195 38 390 12" fill="none" stroke="#C9A24A" stroke-width="1.5"/>
+<g class="iv-sway"><path d="M60 22v50" stroke="#C9A24A"/><use href="#mg" x="60" y="32"/><use href="#mgy" x="60" y="46"/><use href="#mg" x="60" y="60"/><use href="#bell" x="60" y="74"/></g>
+<g class="iv-sway iv-s2"><path d="M128 27v34" stroke="#C9A24A"/><use href="#mgy" x="128" y="37"/><use href="#mg" x="128" y="51"/><use href="#bell" x="128" y="63"/></g>
+<g class="iv-sway iv-s3"><path d="M195 28v56" stroke="#C9A24A"/><use href="#mg" x="195" y="38"/><use href="#mgy" x="195" y="52"/><use href="#mg" x="195" y="66"/><use href="#bell" x="195" y="84"/></g>
+<g class="iv-sway iv-s2"><path d="M262 27v34" stroke="#C9A24A"/><use href="#mgy" x="262" y="37"/><use href="#mg" x="262" y="51"/><use href="#bell" x="262" y="63"/></g>
+<g class="iv-sway"><path d="M330 22v50" stroke="#C9A24A"/><use href="#mg" x="330" y="32"/><use href="#mgy" x="330" y="46"/><use href="#mg" x="330" y="60"/><use href="#bell" x="330" y="74"/></g>
+<use href="#mg" x="20" y="16"/><use href="#leaf" x="34" y="17"/><use href="#mgy" x="94" y="24"/><use href="#leaf" x="108" y="24"/><use href="#mg" x="160" y="27"/><use href="#leaf" x="174" y="27"/><use href="#mgy" x="228" y="27"/><use href="#leaf" x="242" y="25"/><use href="#mg" x="296" y="23"/><use href="#leaf" x="310" y="21"/><use href="#mgy" x="372" y="15"/>
+</svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding-bottom:60px">
+<p style="margin:0;font-size:12px;letter-spacing:6px;color:#E8CF8E">YOU ARE INVITED</p>
+<div style="display:flex;flex-direction:column;align-items:center;gap:12px">
+<button type="button" id="openBtn" class="seal-btn iv-pulse" aria-label="Open the invitation">
+<svg width="214" height="214" viewBox="0 0 200 200" aria-hidden="true" style="display:block">
+<defs>
+<radialGradient id="sealWax" gradientUnits="userSpaceOnUse" cx="78" cy="70" r="120"><stop offset="0" stop-color="#D23F55"/><stop offset=".5" stop-color="#A3172C"/><stop offset="1" stop-color="#5E0C1A"/></radialGradient>
+<radialGradient id="sealPress" gradientUnits="userSpaceOnUse" cx="100" cy="100" r="74"><stop offset="0" stop-color="#7A1224"/><stop offset=".8" stop-color="#8E1A2D"/><stop offset="1" stop-color="#B12B40"/></radialGradient>
+<linearGradient id="sealGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBE9B2"/><stop offset=".4" stop-color="#D9B460"/><stop offset=".7" stop-color="#A47E2E"/><stop offset="1" stop-color="#F1DDA6"/></linearGradient>
+</defs>
+<circle cx="100" cy="100" r="97" fill="none" stroke="#C9A24A" stroke-opacity=".5" stroke-width=".8" stroke-dasharray="1.5 4"/>
+<g fill="url(#sealWax)"><circle cx="100" cy="100" r="82"/><circle cx="172" cy="74" r="13"/><circle cx="121" cy="176" r="12"/><circle cx="38" cy="150" r="14"/><circle cx="28" cy="72" r="11"/><circle cx="84" cy="21" r="12"/><circle cx="168" cy="140" r="10"/></g>
+<circle cx="100" cy="100" r="70" fill="url(#sealPress)"/>
+<circle cx="100" cy="100" r="70" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="100" cy="100" r="66" fill="none" stroke="url(#sealGold)" stroke-width="1.4"/>
+<g fill="url(#sealGold)">
+<ellipse cx="61.4" cy="146" rx="2.6" ry="6.5" transform="rotate(160 61.4 146)"/><ellipse cx="50.9" cy="134.4" rx="2.6" ry="6.5" transform="rotate(175 50.9 134.4)"/><ellipse cx="43.6" cy="120.5" rx="2.6" ry="6.5" transform="rotate(190 43.6 120.5)"/><ellipse cx="40.2" cy="105.2" rx="2.6" ry="6.5" transform="rotate(205 40.2 105.2)"/><ellipse cx="40.9" cy="89.6" rx="2.6" ry="6.5" transform="rotate(220 40.9 89.6)"/><ellipse cx="45.6" cy="74.6" rx="2.6" ry="6.5" transform="rotate(235 45.6 74.6)"/><ellipse cx="54" cy="61.4" rx="2.6" ry="6.5" transform="rotate(250 54 61.4)"/>
+<ellipse cx="138.6" cy="146" rx="2.6" ry="6.5" transform="rotate(20 138.6 146)"/><ellipse cx="149.1" cy="134.4" rx="2.6" ry="6.5" transform="rotate(5 149.1 134.4)"/><ellipse cx="156.4" cy="120.5" rx="2.6" ry="6.5" transform="rotate(-10 156.4 120.5)"/><ellipse cx="159.8" cy="105.2" rx="2.6" ry="6.5" transform="rotate(-25 159.8 105.2)"/><ellipse cx="159.1" cy="89.6" rx="2.6" ry="6.5" transform="rotate(-40 159.1 89.6)"/><ellipse cx="154.4" cy="74.6" rx="2.6" ry="6.5" transform="rotate(-55 154.4 74.6)"/><ellipse cx="146" cy="61.4" rx="2.6" ry="6.5" transform="rotate(-70 146 61.4)"/>
+<circle cx="100" cy="46" r="2.2"/><path d="M100 39l2 4-2 2-2-2z"/>
+</g>
+<text x="70" y="115" text-anchor="middle" fill="url(#sealGold)" style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:46px;letter-spacing:-1px">D</text>
+<text x="101" y="112" text-anchor="middle" fill="#F1DDA6" style="font-family:'Allura',cursive;font-size:34px">&amp;</text>
+<text x="132" y="115" text-anchor="middle" fill="url(#sealGold)" style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:46px;letter-spacing:-1px">A</text>
+<text x="100" y="141" text-anchor="middle" fill="#E8CF8E" style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:11px;letter-spacing:1.5px">28 . 12 . 2026</text>
+<path d="M58 52Q70 42 84 40" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</button>
+<p style="margin:0;font-size:11px;letter-spacing:5px;color:#E8CF8E">TAP TO OPEN</p>
+</div>
+<div style="text-align:center">
+<p class="bric" style="margin:0;font-weight:700;font-size:38px;letter-spacing:-1.5px;line-height:1.1;color:#FBF3E6">Divesh <span class="script" style="font-weight:400;font-size:30px;letter-spacing:0;margin:0 4px;color:#E8CF8E">&amp;</span> Achal</p>
+<p style="margin:10px 0 0;font-size:13px;font-weight:300;letter-spacing:4px;color:#E8CF8E">28 · 12 · 2026</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  var app = document.getElementById('app');
+  var fx = document.getElementById('fx');
+  var scroll = document.getElementById('scroll');
+  var NS = 'http://www.w3.org/2000/svg';
+
+  function rand(a, b) { return a + Math.random() * (b - a); }
+  function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+  function burst(kind, n) {
+    var w = app.clientWidth, h = app.clientHeight;
+    for (var i = 0; i < n; i++) {
+      var el;
+      if (kind === 'petal') {
+        var size = rand(10, 20);
+        el = document.createElement('div');
+        el.className = 'petal';
+        el.style.left = rand(0, w - 10) + 'px';
+        el.style.width = size + 'px';
+        el.style.height = size * 0.7 + 'px';
+        el.style.background = pick(['#F2A03D', '#F7C548', '#E8862A', '#C2364A', '#F28C9A']);
+        el.style.animation = (Math.random() < .5 ? 'iv-fallL ' : 'iv-fallR ') + rand(3.6, 6).toFixed(2) + 's ease-in ' + rand(0, 1.4).toFixed(2) + 's both';
+      } else {
+        var s = rand(16, 34);
+        el = document.createElementNS(NS, 'svg');
+        el.setAttribute('viewBox', '0 0 24 24');
+        el.setAttribute('width', s); el.setAttribute('height', s);
+        el.setAttribute('class', 'heart');
+        el.style.left = rand(w * 0.28, w * 0.72) + 'px';
+        el.style.top = rand(h * 0.66, h * 0.85) + 'px';
+        el.style.animation = 'iv-up ' + rand(2.2, 3.6).toFixed(2) + 's ease-out ' + rand(0, .6).toFixed(2) + 's both';
+        var p = document.createElementNS(NS, 'path');
+        p.setAttribute('d', 'M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z');
+        p.setAttribute('fill', pick(['#C2364A', '#E0566A', '#A3172C', '#F28C9A']));
+        el.appendChild(p);
+      }
+      fx.appendChild(el);
+      (function (node) { setTimeout(function () { node.remove(); }, 8000); })(el);
+    }
+  }
+
+  document.getElementById('openBtn').addEventListener('click', function () {
+    app.classList.add('opened');
+    setTimeout(function () { burst('petal', 30); }, 900);
+  });
+
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('.tile'));
+  var hint = document.getElementById('tileHint');
+  var saved = document.getElementById('saved');
+  function updateTiles() {
+    var all = tiles.every(function (t) { return t.classList.contains('flipped'); });
+    hint.textContent = all ? 'See you there!' : 'Tap each card to reveal the date';
+    saved.classList.toggle('hidden', !all);
+    return all;
+  }
+  tiles.forEach(function (t) {
+    t.addEventListener('click', function () {
+      t.classList.toggle('flipped');
+      if (updateTiles()) burst('petal', 22);
+    });
+  });
+
+  document.getElementById('closeBtn').addEventListener('click', function () {
+    app.classList.remove('opened');
+    tiles.forEach(function (t) { t.classList.remove('flipped'); });
+    updateTiles();
+    setTimeout(function () { scroll.scrollTop = 0; }, 400);
+  });
+  document.getElementById('couple').addEventListener('click', function () { burst('heart', 14); });
+  document.getElementById('shower').addEventListener('click', function () { burst('petal', 40); });
+
+  var target = Date.UTC(2026, 11, 28, 5, 0, 0);
+  var dEl = document.getElementById('cdD'), hEl = document.getElementById('cdH'),
+      mEl = document.getElementById('cdM'), sEl = document.getElementById('cdS'),
+      lEl = document.getElementById('cdLabel');
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function tick() {
+    var diff = Math.max(0, target - Date.now());
+    var s = Math.floor(diff / 1000);
+    dEl.textContent = Math.floor(s / 86400);
+    hEl.textContent = pad(Math.floor((s % 86400) / 3600));
+    mEl.textContent = pad(Math.floor((s % 3600) / 60));
+    sEl.textContent = pad(s % 60);
+    lEl.textContent = diff > 0 ? 'counting down to forever' : 'the big day is here';
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
